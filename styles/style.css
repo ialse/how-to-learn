@@ -179,6 +179,8 @@
 .feynman {
   height: 790px;
   position: relative;
+  background-color: #f2f2f2;
+  z-index: -2;
 }
 
 .feynman__title {
@@ -218,7 +220,7 @@
 .kaufman {
   position: relative;
   padding: 90px 0;
-  background-color: black;
+  background-color: #1f1f1f;
   overflow: hidden;
   color: white;
 }
@@ -243,7 +245,7 @@
 /***************footer************/
 .footer {
   padding: 60px 0 40px 0;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
 }
 
