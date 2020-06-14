@@ -61,6 +61,7 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
@@ -77,6 +78,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .logo_place_header {
   position: absolute;
   top: 30px;
