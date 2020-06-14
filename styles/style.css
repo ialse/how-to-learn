@@ -102,7 +102,7 @@
   line-height: 1.2;
   font-size: 18px;
   color: #2f80ed;
-  margin: 0 ;  /*обнуляю браузерные отступы*/
+  margin: 0;  /*обнуляю браузерные отступы*/
 }
 
 .two-columns__main-text {
@@ -112,8 +112,7 @@
   width: 80%;
   min-width: 784px;
   line-height: 34px;
-  font-size: 24px;
-  
+  font-size: 24px;  
 }
 
 .two-columns__paragraph {
@@ -121,7 +120,7 @@
 }
 
 .two-columns__paragraph:last-of-type {
-  margin-bottom: 0px;  /*у последнего абзаца не должно быть отступа снизу*/
+  margin-bottom: 0;  /*у последнего абзаца не должно быть отступа снизу*/
 }
 
 .two-columns__span-accent {
@@ -300,6 +299,7 @@
   text-decoration: none;
   color: white;
 }
+
 .footer__social-icon {
   margin-right: 10px;
 }
