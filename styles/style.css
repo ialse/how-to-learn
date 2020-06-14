@@ -94,6 +94,7 @@
 
 .two-columns {
   display: flex;
+  justify-content: space-between;
   width: 80%;
 }
 
@@ -138,7 +139,7 @@
 
 .section-subtitle {
   width: 60%;
-  margin: 0 auto; /*обнуляю браузерные отступы и делаю выравнивание по центру*/  
+  margin: 0 auto; /*обнуляю браузерные отступы и делаю выравнивание по центру*/
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -175,7 +176,6 @@
 }
 
 /***************feynman************/
-
 .feynman {
   height: 790px;
   position: relative;
@@ -247,7 +247,7 @@
   color: white;
 }
 
-.footer_columns {
+.footer__columns {
   width: 90%;
   min-height: 350px;
   height: auto;
