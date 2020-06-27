@@ -1,0 +1,5 @@
+.footer__column-links {
+    list-style: none;
+    margin: 0 0 16px 0; /*обнуляю браузерные отступы и задаю нижний отступ*/
+    padding: 0;
+  }

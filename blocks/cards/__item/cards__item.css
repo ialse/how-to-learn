@@ -1,0 +1,13 @@
+.cards__item {
+    padding-top: 60px;
+    width: 240px;
+}
+
+/*задаю отступы только первым двум колонкам 1,2,4,5,7,8....*/
+.cards__item:nth-of-type(3n+1) {
+    padding-right: 100px;
+}
+
+.cards__item:nth-of-type(3n+2) {
+    padding-right: 100px;
+}

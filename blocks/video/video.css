@@ -1,0 +1,8 @@
+@import url(./__iframes/video__iframes.css);
+@import url(./__iframe/video__iframe.css);
+
+.video {
+    padding-top: 50px;
+    position: relative;
+    top: 50px; /*чтобы видео наехали на секцию ниже сдвигаю эту секцию на 50px вниз, а отступ сверху вместо 100 делаю 50*/
+}

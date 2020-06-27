@@ -1,0 +1,7 @@
+.two-columns__paragraph {
+    margin: 0 0 30px 0;  /*обнуляю браузерные отступы и задаю нижний отступ*/
+  }
+  
+  .two-columns__paragraph:last-of-type {
+    margin-bottom: 0;  /*у последнего абзаца не должно быть отступа снизу*/
+  }
