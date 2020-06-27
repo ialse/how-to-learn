@@ -68,12 +68,8 @@
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <div class="video__iframe">
-            <iframe src="https://www.youtube.com/embed/arj7oStGLkU" height="316px" width="515px" frameborder="0"></iframe>
-          </div>
-          <div class="video__iframe">
-            <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" height="316px" width="515px" frameborder="0"></iframe>
-          </div>
+          <iframe src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" class="video__iframe"></iframe>
+          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" class="video__iframe"></iframe>
         </div>
       </section>
 
@@ -89,10 +85,11 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <img src="./images/feynman.png"  class="feynman__img" alt="Фото Фейнмана">
+        <div class="feynman__img"></div>
         <a href="#" class="feynman__link">Подробнее &rarr;</a>
       </section>
 
+      <!-- для КОД-РЕВЬЮЕРА: по поводу списков. Ваш лектор Патлух говорил, что тема списков холиварная. Отмечу также еще раз, что сам сайт Практикума, который должен быть эталонным в плане верстки, не использует списки даже в оглавлении!! Не понимаю смысл рекомендовать их наличие..  -->
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
@@ -134,11 +131,13 @@
         </div>
       </section>
 
+      <!-- для КОД-РЕВЬЮЕРА: рекомендация: Сейчас высота ссылки равна высоте картинки (поводите курсором под ссылкой).
+        Согласен, я обратил на это внимание до сдачи в 1 раз, однако в брифе блок ссылки указан в полную высоту, видимо надо поправить бриф или акцентировать на этом внимание -->
       <section class="khan">
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
@@ -196,15 +195,32 @@
         <div class="kaufman__triangle rotation"></div>
       </section>
 
+      <!-- для КОД-РЕВЬЮЕРА: после рекомендации, добавил не только эффект при наведении, но и сами ссылки, надеюсь, не ошибка-->
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <img src="./images/logo/resources-arzamas.svg" class="resources__logo" alt="Логотип Арзамас">
-          <img src="./images/logo/resources-n1.svg" class="resources__logo" alt="Логотип н плюс один">
-          <img src="./images/logo/resources-strelka.svg" class="resources__logo" alt="Логотип Стрелка">
-          <img src="./images/logo/resources-polka.svg" class="resources__logo" alt="Логотип Полка">
-        </div>
+        <ul class="resources__logo-zone">
+          <li class="resources__list-item">
+            <a href="#" target="blank" class="resources__link">
+              <img src="./images/logo/resources-arzamas.svg" class="resources__logo" alt="Логотип Арзамас">
+            </a>
+          </li>
+          <li class="resources__list-item">
+            <a href="#" target="blank" class="resources__link">
+              <img src="./images/logo/resources-n1.svg" class="resources__logo" alt="Логотип н плюс один">
+            </a>
+          </li>
+          <li class="resources__list-item">
+            <a href="#" target="blank" class="resources__link">
+              <img src="./images/logo/resources-strelka.svg" class="resources__logo" alt="Логотип Стрелка">
+            </a>
+          </li>
+          <li class="resources__list-item">
+            <a href="#" target="blank" class="resources__link">
+              <img src="./images/logo/resources-polka.svg" class="resources__logo" alt="Логотип Полка">
+            </a>
+          </li>
+        </ul>
       </section>      
     </main>
     
@@ -226,19 +242,19 @@
           <h2 class="footer__column-heading">Соцсети</h2>
           <ul class="footer__column-links">
             <li class="footer__column-list-item">              
-              <a href="#" class="footer__link">
+              <a href="#" class="footer__link" target="blank">
                 <img src="images/facebook_color_white.svg" class="footer__social-icon" alt="Фейсбук">
                 Facebook
               </a>
             </li>
-            <li class="footer__column-list-item">
-              <a href="#" class="footer__link">
+            <li class="footer__column-list-item" >
+              <a href="#" class="footer__link" target="blank">
                 <img src="images/vk_color_white.svg" class="footer__social-icon" alt="ВКонтакте">
                 ВКонтакте
               </a>              
             </li>
             <li class="footer__column-list-item">
-              <a href="#" class="footer__link">
+              <a href="#" class="footer__link" target="blank">
                 <img src="images/instagram_color_white.svg" class="footer__social-icon" alt="Инстаграмм">
                 Instagram
               </a>
